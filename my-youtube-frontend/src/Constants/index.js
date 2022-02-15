@@ -2,9 +2,9 @@ import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
 TimeAgo.addDefaultLocale(en)
 
-export const api = "https://anjali1196.pythonanywhere.com";
+export const api = "https://localhost:8000";
 
-export const website = "https://you-tube-x.web.app";
+export const website = "https://localhost:3000";
 
 export const timeAgo = new TimeAgo('en-US')
 
