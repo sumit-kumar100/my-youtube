@@ -1,0 +1,62 @@
+@mixin object-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  $circleSize: 115px;
+  $radius: 80px;
+  $shadow: 0 0 10px 0 rgba(255,255,255,.35);
+  $fontColor: rgb(250,250,250);
+  
+  .profile-pic {
+    color: transparent;
+    transition: all .3s ease;
+    @include object-center;
+    position: relative;
+    transition: all .3s ease;
+    
+    input {
+      display: none;
+    }
+    
+    img , .like-img {
+      position: absolute;
+      object-fit: cover;
+      width: $circleSize;
+      height: $circleSize;
+      box-shadow: $shadow;
+      border-radius: $radius;
+      z-index: 0;
+    }
+    
+    .-label {
+      cursor: pointer;
+      height: $circleSize;
+      width: $circleSize;
+    }
+
+    .-label2 {
+      cursor: pointer;
+      height: $circleSize;
+      width: $circleSize;
+    }
+    
+    &:hover {
+      .-label {
+        @include object-center;
+        background-color: rgba(0,0,0,.8);
+        z-index: 10000;
+        color: $fontColor;
+        transition: background-color .2s ease-in-out;
+        border-radius: $radius;
+        margin-bottom: 0;
+      }
+    }
+    
+    small {
+      display: inline-flex;
+      height: 1em;
+    }
+  }
+  
