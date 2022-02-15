@@ -1,6 +1,6 @@
-# Youtube-X (https://you-tube-x.web.app)
+# Youtube-X ( https://you-tube-x.web.app )
 
-(React JS + Django Rest Framework)
+( React JS + Django Rest Framework )
 
 Changes You Have To Made Before Running Project.
 1. In Backend , there is no change.
