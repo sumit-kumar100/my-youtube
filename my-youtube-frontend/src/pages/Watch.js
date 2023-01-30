@@ -776,23 +776,24 @@ const Watch = () => {
                                 {
                                     subscribe.is_subscribed === true ?
                                         <button
-                                            className='btn btn-sm btn-dark shadow-none rounded-0 float-end'
+                                            className='btn btn-sm btn-dark shadow-sm rounded-pill px-3 py-2 float-end'
                                             onClick={HandleDisSubscribe}
                                         >
                                             SUBSCRIBED
                                         </button>
                                         :
                                         <button
-                                            className='btn btn-sm btn-danger shadow-none rounded-0 float-end'
+                                            className='btn btn-sm btn-danger shadow-sm rounded-pill px-3 py-2 float-end'
                                             onClick={HandleSubscribe}
                                         >
                                             SUBSCRIBE
                                         </button>
                                 }
                             </div>
-                            <details className='text-primary'>
+                            <br/>
+                            <details className='text-dark'>
                                 <summary>
-                                    <small className='text-primary fw-bold'>
+                                    <small className='text-dark fw-bold'>
                                         Description
                                     </small>
                                 </summary>
@@ -821,7 +822,7 @@ const Watch = () => {
                                     <label htmlFor="floatingInput">
                                         Add a comment
                                     </label>
-                                    <button className='btn btn-sm btn-outline-success outline-0 mt-2 shadow-none'>
+                                    <button className='btn btn-sm btn-outline-success outline-0 mt-2 shadow-sm rounded-pill px-2'>
                                         Comment
                                     </button>
                                 </form>
@@ -846,7 +847,7 @@ const Watch = () => {
                                                         {cmt.describe}
                                                     </div>
                                                     <button
-                                                        className='ms-auto btn btn-sm btn-outline-danger rounded-0 px-2 shadow-none'
+                                                        className='ms-auto btn btn-sm btn-outline-danger px-3 shadow-sm rounded-pill'
                                                         onClick={(e) => {
                                                             axios.delete(`${Constants.api}/api/comment/${cmt.id}`)
                                                                 .then((response) => [
@@ -929,7 +930,7 @@ const Watch = () => {
                                                         {relate.title}
                                                         <br />
                                                         <span
-                                                            className="badge bg-secondary rounded-0 fw-light"
+                                                            className="badge bg-secondary rounded-pill fw-light"
                                                         >
                                                             {relate.channelTitle}
                                                         </span>

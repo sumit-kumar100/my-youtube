@@ -48,6 +48,8 @@ body {
 .custom-modal-vertical-center{
   margin: 0;
   position: absolute;
+  border-radius: 20px;
+  padding: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -57,6 +59,9 @@ body {
   color: red;
   margin-left: 0.5rem;
   margin-bottom: 1rem;
+}
+.dQCgGj > .wrapper {
+  border-radius: 20px !important;
 }
 .circle {
   width: 80px;
@@ -347,7 +352,7 @@ scrollbar-width: none;
 }
 #loadMore span {
   cursor: pointer;
-  background: royalblue;
+  background:rgb(206, 4, 4);
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -356,7 +361,7 @@ scrollbar-width: none;
   -webkit-font-smoothing: antialiased;
 }
 #loadMore span:hover{
-  background-color: rgb(77, 74, 74);
+  background-color:  rgb(139, 3, 3);
 }
 
 /* Watch */

@@ -24,6 +24,7 @@ const Header = () => {
 
     // Search Items
     const [searchItem, setSearchItem] = useState([]);
+    const [show, setShow] = useState(false);
 
     // User Info From React-Redux
     const is_authenticated = useSelector(state => state.auth.user.is_authenticated);
@@ -33,11 +34,7 @@ const Header = () => {
 
     // Showing SideBar OnClick Event
     const [showNotification, setShowNotification] = useState(false);
-    const HandleMenuClick = () => {
-        let sidebar = document.getElementById('sidebar-nav');
-        sidebar.style.display = 'block';
-    }
-
+ 
     // Logout User
     const HandleLogout = () => {
         Cookie.remove('access_key');
@@ -177,14 +174,13 @@ const Header = () => {
                             id='search-div'
                         >
                             <ReactSearchAutocomplete
-                                items={searchItem}
+                                items={searchItem || []}
                                 onSearch={handleOnSearch}
                                 onSelect={handleOnSelect}
                                 fuseOptions={{ keys: ["title"] }}
                                 resultStringKeyName="title"
                                 formatResult={formatResult}
                                 styling={{
-                                    borderRadius: "0px",
                                     boxShadow: 'none',
                                     height: '35px',
                                     clearIconMargin: '0px 10px 0 0'
@@ -196,9 +192,7 @@ const Header = () => {
             </div>
             <div className="header">
                 <div className="header__left">
-                    <i className="material-icons"
-                        onClick={HandleMenuClick}
-                    >
+                    <i className="material-icons" onClick={() => setShow(show => !show)}>
                         <HiMenu
                             size="20"
                             color="black"
@@ -285,7 +279,7 @@ const Header = () => {
 
                 </div>
             </div>
-            <Sidebar />
+            <Sidebar show={show} setShow={() => setShow(setShow)} />
         </>
     )
 }

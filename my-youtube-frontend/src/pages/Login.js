@@ -48,6 +48,7 @@ const Login = () => {
                                         userInfo: String(userResponse.data.pk),
                                         HasChannel: true
                                     }));
+                                    localStorage.setItem('HasChannel', true)
                                 }
                                 else {
                                     Cookie.set('HasChannel', false)
@@ -56,6 +57,7 @@ const Login = () => {
                                         userInfo: String(userResponse.data.pk),
                                         HasChannel: false
                                     }));
+                                    localStorage.setItem('HasChannel', false)
                                 }
                             })
                             .catch((error) => {
