@@ -14,7 +14,7 @@
   <img src="my-youtube-frontend/public/youtube-6.png" width="250" height="450">
  </div>
 
-Simply clone backend and frontend repositories .
-Run command npm install to install dependencies .
+Simply clone backend and frontend repositories 
+Run command npm install to install dependencies
 
 # Enjoy 🥳🥳🥳🥳
