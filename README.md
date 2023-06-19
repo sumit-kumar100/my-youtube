@@ -61,7 +61,7 @@ You can see a live demo of the application [here](https://you-tube-x.web.app).
 5. Open your browser and navigate to http://localhost:8000 to access the backend.
 
 
-Screenshots
+## Screenshots
 Here are a few screenshots of the Video Call App:
 
 <img src="my-youtube-frontend/public/img-1.png" width="800" height="450">
@@ -71,7 +71,7 @@ Here are a few screenshots of the Video Call App:
 <img src="my-youtube-frontend/public/img-5.png" width="800" height="450">
 
 
-Contributing
+## Contributing
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -79,6 +79,6 @@ Contributions are welcome! If you would like to contribute to this project, plea
 4. Commit your changes and push your branch to your forked repository.
 5. Submit a pull request describing your changes.
 
-License
+## License
 - This project is licensed under the MIT License.
 - Feel free to modify and customize the above README template according to your project's specific requirements.
