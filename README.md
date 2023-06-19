@@ -60,6 +60,17 @@ You can see a live demo of the application [here](https://you-tube-x.web.app).
       python manage.py runserver
 5. Open your browser and navigate to http://localhost:8000 to access the backend.
 
+
+Screenshots
+Here are a few screenshots of the Video Call App:
+
+<img src="my-youtube-frontend/public/img-1.png" width="800" height="450">
+<img src="my-youtube-frontend/public/img-2.png" width="800" height="450">
+<img src="my-youtube-frontend/public/img-3.png" width="800" height="450">
+<img src="my-youtube-frontend/public/img-4.png" width="800" height="450">
+<img src="my-youtube-frontend/public/img-5.png" width="800" height="450">
+
+
 Contributing
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 1. Fork the repository.
@@ -70,28 +81,4 @@ Contributions are welcome! If you would like to contribute to this project, plea
 
 License
 - This project is licensed under the MIT License.
-
-```vbnet
-Feel free to modify and customize the above README template according to your project's specific requirements.
-
-
-# Youtube-X ( https://you-tube-x.web.app )
-
-( React JS + Django Rest Framework )
-
-
-<img src="my-youtube-frontend/public/img-1.png" width="800" height="450">
-
-<img src="my-youtube-frontend/public/img-2.png" width="800" height="450">
-
-<img src="my-youtube-frontend/public/img-3.png" width="800" height="450">
-
-<img src="my-youtube-frontend/public/img-4.png" width="800" height="450">
-
-<img src="my-youtube-frontend/public/img-5.png" width="800" height="450">
-
-
-Simply clone backend and frontend repositories 
-Run command npm install to install dependencies
-
-# Enjoy 🥳🥳🥳🥳
+- Feel free to modify and customize the above README template according to your project's specific requirements.
