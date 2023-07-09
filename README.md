@@ -70,7 +70,6 @@ Here are a few screenshots of the Video Call App:
 <img src="my-youtube-frontend/public/img-4.png" width="800" height="450">
 <img src="my-youtube-frontend/public/img-5.png" width="800" height="450">
 
-
 ## Contributing
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 1. Fork the repository.
